@@ -23,3 +23,18 @@ This decentralized application (DApp) allows users to play the classic game of R
 - Aptos CLI: Required to deploy and interact with the smart contracts.
 - Move SDK: For writing and managing the smart contracts.
 - Node.js & npm: For running the TypeScript front-end.
+
+## Deploy the Smart Contract
+To deploy the smart contract:
+
+Install Aptos CLI.
+
+Update the Move.toml file with your wallet address:
+
+aptos init
+Add your Account addr here for Deployment
+primitives = "0x6d0177e989c24a754898079abcda70faca206529a4101072dfa54b91d17727b5"
+Compile and publish the contract:
+
+aptos move compile
+aptos move publish
